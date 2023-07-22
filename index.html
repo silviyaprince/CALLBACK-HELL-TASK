@@ -1,0 +1,52 @@
+<!-- <html>
+<head>
+    <title>factorial</title>
+</head>
+<body>
+    <input type="number"  id="n"></input>
+    <input type="number"  id="r"></input>
+    <input type="submit" onclick="func()"></input>
+    <p id="demo"></p>
+    <script>
+        function fact(a){
+            let f=1;
+            for(let i=1;i<=a;i++)
+            {
+                f=f*i;
+            }
+            return f;
+        }
+
+        async function func(){
+            let n=document.getElementById("n").value;
+            let r=document.getElementById("r").value;
+            let q=fact(n);
+            let e=fact(r);
+            let t=fact(n-r);
+            let mypromise=new Promise((resolve)=>{
+                setTimeout(()=>{
+                    resolve(q/(t*e))
+                },3000)
+            })
+            document.getElementById("demo").innerHTML=await mypromise;
+document.body.style.backgroundColor="yellow";
+document.getElementById("demo").innerText.color="red";
+        }          
+        
+        
+    </script>
+</body>
+</html> -->
+
+<html>
+<head>
+  <title>Countdown to Independence Day</title>
+</head>
+<body>
+  <h1 id="countdown"></h1>
+  <h2 id="message"></h2>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
